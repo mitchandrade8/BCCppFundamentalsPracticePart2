@@ -1,17 +1,20 @@
 
 #include <iostream>
 
-std::string concatString(std::string string1, std::string string2);
+std::string concatStrings(std::string string1, std::string string2);
 
 int main() {
 
-    std::string firstName = "Everyday";
-    std::string lastName = "I'm Hustlin'";
+    std::string firstName = "Mitch";
+    std::string lastName = "A";
+    std::string fullName = concatStrings(firstName, lastName);
+
+    std::cout << "Hello " << fullName;
 
     return 0;
 
 }
 
-std::string concatString(std::string string1, std::string string2) {
+std::string concatStrings(std::string string1, std::string string2) {
     return string1 + " " + string2;
 }
