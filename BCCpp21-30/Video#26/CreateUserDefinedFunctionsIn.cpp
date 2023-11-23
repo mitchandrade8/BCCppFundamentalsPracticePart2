@@ -3,7 +3,7 @@
 
 
 
-void happyBirthday(std::string name);
+void happyBirthday(std::string name, int age);
 
 
 int main() {
@@ -12,18 +12,20 @@ int main() {
         // Function = a block of reusable code
     
     std::string name = "Mitch";
+    int age = 21;
 
-    happyBirthday(name);
+    happyBirthday(name, age);
 
     return 0;
 
 }
 
-void happyBirthday(std::string name) {
+void happyBirthday(std::string name, int age) {
 
     std::cout << "Happy Birthday to " << name << '\n';
     std::cout << "Happy Birthday to " << name << '\n';
     std::cout << "Happy Birthday dear " << name << '\n';
     std::cout << "Happy Birthday to " << name << '\n';
+    std::cout << "You are " << age << " years old!\n";
 
 }
